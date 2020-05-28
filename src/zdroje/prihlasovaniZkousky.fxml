@@ -9,11 +9,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" layoutX="1031.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" layoutX="1062.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
       <Button layoutX="158.0" layoutY="313.0" mnemonicParsing="false" onAction="#sprava" prefHeight="50.0" prefWidth="224.0" text="Správa zkoušek" visible="false" />
-      <Button layoutX="442.0" layoutY="478.0" mnemonicParsing="false" onAction="#zpet" prefHeight="50.0" prefWidth="224.0" text="Zpět" />
-      <TableView fx:id="prihlasene" layoutX="77.0" layoutY="44.0" prefHeight="408.0" prefWidth="414.0">
+      <Button layoutX="442.0" layoutY="477.0" mnemonicParsing="false" onAction="#zpet" prefHeight="50.0" prefWidth="224.0" text="Zpět" />
+      <TableView fx:id="prihlasene" layoutX="46.0" layoutY="44.0" prefHeight="408.0" prefWidth="414.0">
         <columns>
           <TableColumn fx:id="pID" prefWidth="60.0" text="ID" />
           <TableColumn fx:id="pPredmet" prefWidth="133.0" text="Předmět" />
@@ -21,17 +21,19 @@
             <TableColumn fx:id="pSemestr" prefWidth="95.0" text="Semestr" />
         </columns>
       </TableView>
-      <TableView fx:id="seznam" layoutX="617.0" layoutY="44.0" prefHeight="408.0" prefWidth="414.0">
+      <TableView fx:id="seznam" layoutX="483.0" layoutY="44.0" prefHeight="408.0" prefWidth="579.0">
          <columns>
             <TableColumn fx:id="sID" prefWidth="60.0" text="ID" />
             <TableColumn fx:id="sPredmet" prefWidth="133.0" text="Předmět" />
             <TableColumn fx:id="sDatum" prefWidth="125.0" text="Datum" />
             <TableColumn fx:id="sSemestr" prefWidth="95.0" text="Semestr" />
+            <TableColumn fx:id="sSemestr" prefWidth="83.0" text="Kapacita" />
+            <TableColumn fx:id="sSemestr" prefWidth="82.0" text="Přihlášeno" />
          </columns>
       </TableView>
-      <Button layoutX="509.0" layoutY="179.0" mnemonicParsing="false" onAction="#prihlasit" prefHeight="36.0" prefWidth="90.0" text="Přihlásit" />
-      <Button layoutX="509.0" layoutY="259.0" mnemonicParsing="false" onAction="#odhlasit" prefHeight="36.0" prefWidth="90.0" text="Odhlásit" />
-      <Label layoutX="234.0" layoutY="27.0" text="Přihlášené zkoušky" />
-      <Label layoutX="805.0" layoutY="27.0" text="Seznam zkoušek" />
+      <Button layoutX="773.0" layoutY="484.0" mnemonicParsing="false" onAction="#prihlasit" prefHeight="36.0" prefWidth="162.0" text="Přihlásit se na zkoušku" />
+      <Button layoutX="166.0" layoutY="484.0" mnemonicParsing="false" onAction="#odhlasit" prefHeight="36.0" prefWidth="175.0" text="Odhlásit zkoušku" />
+      <Label layoutX="203.0" layoutY="27.0" text="Přihlášené zkoušky" />
+      <Label layoutX="760.0" layoutY="27.0" text="Seznam zkoušek" />
    </children>
 </AnchorPane>
