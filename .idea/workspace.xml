@@ -66,8 +66,14 @@
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zdroje/vsechnyZkousky.fxml">
           <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
@@ -99,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/zdroje/menu.fxml" />
         <option value="$PROJECT_DIR$/src/zdroje/udajeUzivatele.fxml" />
         <option value="$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml" />
+        <option value="$PROJECT_DIR$/src/zdroje/vsechnyZkousky.fxml" />
       </list>
     </option>
   </component>
@@ -389,6 +396,10 @@
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zdroje/vsechnyZkousky.fxml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
