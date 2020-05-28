@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" layoutX="1031.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
       <TextField fx:id="jmeno" layoutX="568.0" layoutY="142.0" prefHeight="31.0" prefWidth="191.0" />
       <TextField fx:id="prijmeni" layoutX="568.0" layoutY="191.0" prefHeight="31.0" prefWidth="191.0" />

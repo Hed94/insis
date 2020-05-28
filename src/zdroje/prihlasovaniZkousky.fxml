@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" layoutX="1062.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
       <Button layoutX="158.0" layoutY="313.0" mnemonicParsing="false" onAction="#sprava" prefHeight="50.0" prefWidth="224.0" text="Správa zkoušek" visible="false" />
       <Button layoutX="442.0" layoutY="477.0" mnemonicParsing="false" onAction="#zpet" prefHeight="50.0" prefWidth="224.0" text="Zpět" />

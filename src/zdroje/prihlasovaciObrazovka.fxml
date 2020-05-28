@@ -8,10 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="472.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="472.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="474.0" layoutX="464.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
       <TextField fx:id="uzivatelskeJmeno" layoutX="158.0" layoutY="236.0" prefHeight="38.0" prefWidth="224.0" promptText="Uživatelské jméno" />
       <PasswordField fx:id="heslo" layoutX="158.0" layoutY="311.0" prefHeight="38.0" prefWidth="224.0" promptText="Heslo" />

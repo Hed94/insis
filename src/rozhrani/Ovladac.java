@@ -1,15 +1,31 @@
 package rozhrani;
 
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import logika.Uzivatel;
 
 import java.io.IOException;
 
+/**
+ *  Třída slouží jako vzor pro všechny kontrollery v aplikaci
+ *  Neboť každý z nich musí mít jasně daného přihlášeného uživatele
+ *  Vyjímkou je první okno přihlášení do aplikace, ale pro zjednodušení to implementuje také.
+ *
+ *  Metoda přejdi do okna přechází do okna které ji zadáme a nastaví tam přihlášeného uživatele.
+ *  Zároveň pak současné okno zavře a to díky odkazu na rectangle.
+ *  Což je modrý panel na každé stránce - konkrétně ten levý.
+ */
+
+
 public class Ovladac {
     private Uzivatel prihlasenyUzivatel;
+
+    @FXML
+    private Rectangle rectangle;
 
     public void nastavUzivatele(Uzivatel uzivatel)
     {
@@ -29,5 +45,7 @@ public class Ovladac {
         ovladac.nastavUzivatele(prihlasenyUzivatel);
 
         stage.show();
+        Stage soucasne = (Stage) rectangle.getScene().getWindow();
+        stage.close();
     }
 }
