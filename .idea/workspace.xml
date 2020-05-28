@@ -66,74 +66,6 @@
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zdroje/vsechnyZkousky.fxml">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logika/Uzivatel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
-                <element signature="e#1036#1037#0" expanded="true" />
-                <element signature="e#1066#1067#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-                <element signature="e#1183#1184#0" expanded="true" />
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1253#1254#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1353#1354#0" expanded="true" />
-                <element signature="e#1401#1402#0" expanded="true" />
-                <element signature="e#1441#1442#0" expanded="true" />
-                <element signature="e#1482#1483#0" expanded="true" />
-                <element signature="e#1519#1520#0" expanded="true" />
-                <element signature="e#1579#1580#0" expanded="true" />
-                <element signature="e#1631#1632#0" expanded="true" />
-                <element signature="e#1674#1675#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-                <element signature="e#1771#1772#0" expanded="true" />
-                <element signature="e#1821#1822#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/databaze/Databaze.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rozhrani/Ovladac.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="15" column="96" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zdroje/formularZkousek.fxml">
           <provider editor-type-id="text-editor" />
@@ -156,17 +88,28 @@
           <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniDoAplikace.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniDoAplikace.java">
+        <entry file="file://$PROJECT_DIR$/src/rozhrani/Ovladac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="691">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,12 +142,13 @@
         <option value="$PROJECT_DIR$/src/logika/Uzivatel.java" />
         <option value="$PROJECT_DIR$/src/logika/Zkouska.java" />
         <option value="$PROJECT_DIR$/src/main/Controller.java" />
-        <option value="$PROJECT_DIR$/src/rozhrani/Ovladac.java" />
         <option value="$PROJECT_DIR$/src/zdroje/formularZkousek.fxml" />
         <option value="$PROJECT_DIR$/src/zdroje/menu.fxml" />
         <option value="$PROJECT_DIR$/src/zdroje/prihlasovaciObrazovka.fxml" />
         <option value="$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml" />
         <option value="$PROJECT_DIR$/src/zdroje/vsechnyZkousky.fxml" />
+        <option value="$PROJECT_DIR$/src/rozhrani/Ovladac.java" />
+        <option value="$PROJECT_DIR$/src/main/ControllerPrihlasovaniDoAplikace.java" />
       </list>
     </option>
   </component>
@@ -402,6 +346,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.09062003" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -543,24 +488,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniDoAplikace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rozhrani/Ovladac.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="15" column="96" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/zdroje/vsechnyZkousky.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zdroje/udajeUzivatele.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zdroje/formularZkousek.fxml">
       <provider editor-type-id="text-editor" />
@@ -578,17 +516,27 @@
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/rozhrani/Ovladac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zdroje/udajeUzivatele.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zdroje/vsechnyZkousky.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniDoAplikace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

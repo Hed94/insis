@@ -32,6 +32,11 @@ public class Ovladac {
         this.prihlasenyUzivatel = uzivatel;
     }
 
+    public Uzivatel getPrihlasenyUzivatel()
+    {
+        return this.prihlasenyUzivatel;
+    }
+
     public void prejdiDoOkna(String nazevOkna) throws IOException {
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader(getClass().getResource(""+nazevOkna));
