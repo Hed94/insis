@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="472.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="474.0" layoutX="464.0" stroke="BLACK" strokeType="INSIDE" width="77.0" />
+      <ImageView fitHeight="177.0" fitWidth="212.0" layoutX="183.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@vseLogo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="159.0" layoutY="236.0" mnemonicParsing="false" onAction="#udaje" prefHeight="50.0" prefWidth="224.0" text="Upravit své osobní údaje" />
+      <Button layoutX="159.0" layoutY="313.0" mnemonicParsing="false" onAction="#zkousky" prefHeight="50.0" prefWidth="224.0" text="Přihlašování na zkoušky" />
+      <Button layoutX="158.0" layoutY="313.0" mnemonicParsing="false" onAction="#sprava" prefHeight="50.0" prefWidth="224.0" text="Správa zkoušek" visible="false" />
+      <Button layoutX="158.0" layoutY="385.0" mnemonicParsing="false" onAction="#odhlasSe" prefHeight="50.0" prefWidth="224.0" text="Odhlásit se" />
+   </children>
+</AnchorPane>
