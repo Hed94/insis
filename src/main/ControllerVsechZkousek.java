@@ -66,7 +66,7 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
 
     /**
      *  Metoda maže vybranou zkoušku
-     *  Ovšem pouze v případě, že je nějaká vybrána, jinak vyhodá chybovou hlášku
+     *  Ovšem pouze v případě, že je nějaká vybrána, jinak vyhodí chybovou hlášku
      */
     @FXML
     public void smazat() throws IOException {

@@ -2,6 +2,11 @@ package logika;
 
 import java.time.LocalDate;
 
+/**
+ *  Třída definuje strukturu Uživatele
+ *  Jaké má atributy, konstruktory...
+ */
+
 public class Uzivatel {
     private String username;
     private String heslo;

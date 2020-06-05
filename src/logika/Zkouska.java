@@ -2,6 +2,11 @@ package logika;
 
 import java.time.LocalDate;
 
+/**
+ *  Třída definuje strukturu zkoušky
+ *  Jaké má atributy, konstruktory...
+ */
+
 public class Zkouska {
     private int ID;
     private String predmet;
