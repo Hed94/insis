@@ -46,7 +46,7 @@ public class ControllerMenu extends Ovladac implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        if(prihlasenyUzivatel.isStudent())
+        if(getPrihlasenyUzivatel().isStudent())
         {
             // Jsem student
             tPrihlasovani.setVisible(true);
