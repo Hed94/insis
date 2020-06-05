@@ -54,7 +54,10 @@ public class ControllerUdajuUzivatele extends Ovladac
         prejdiDoOkna("../zdroje/menu.fxml");
     }
 
-    // Metoda nahrává po otevření okna do políček data a nastavuje obrázek
+    /**
+     *  Metoda nahrává po otevření okna do políček data a nastavuje obrázek
+     *  Obrázek je náhodně brán z apíčka podle ID uživatele.
+     */
     @Override
     public void nactiData()
     {
@@ -64,7 +67,6 @@ public class ControllerUdajuUzivatele extends Ovladac
         narozeni.setValue(getPrihlasenyUzivatel().getDatumNarozeni());
 
         String path = "https://randomuser.me/api/portraits/men/"+getPrihlasenyUzivatel().getID()+".jpg";
-        String pathToOpen = "https://randomuser.me/api/portraits/men/"+getPrihlasenyUzivatel().getID()+".jpg";
 
         Image image = new Image(path);
         fotka.setImage(image);
