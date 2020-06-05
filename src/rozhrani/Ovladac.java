@@ -57,9 +57,12 @@ public class Ovladac {
         Ovladac ovladac = loader.getController();
         ovladac.nastavUzivatele(prihlasenyUzivatel);
         ovladac.nastavZvolenouZkousku(zvolenaZkouska);
+        nactiData();
 
         stage.show();
         Stage soucasne = (Stage) rectangle.getScene().getWindow();
-        stage.close();
+        soucasne.close();
     }
+
+    public void nactiData() {}
 }

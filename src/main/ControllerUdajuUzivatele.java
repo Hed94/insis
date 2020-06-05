@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
  *  Kontroller slouží pro ovládání obrazovky s osobními údaji přihlašeného uživatele.
  */
 
-public class ControllerUdajuUzivatele extends Ovladac implements Initializable
+public class ControllerUdajuUzivatele extends Ovladac
 {
     @FXML
     private TextField jmeno,prijmeni,email;
@@ -56,7 +56,7 @@ public class ControllerUdajuUzivatele extends Ovladac implements Initializable
 
     // Metoda nahrává po otevření okna do políček data a nastavuje obrázek https://randomuser.me/api/portraits/men/75.jpg
     @Override
-    public void initialize(URL url, ResourceBundle rb)
+    public void nactiData()
     {
         jmeno.setText(getPrihlasenyUzivatel().getJmeno());
         prijmeni.setText(getPrihlasenyUzivatel().getPrijmeni());

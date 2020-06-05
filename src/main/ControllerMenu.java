@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
  *  A podle typu uživatele ( učitel / student ) se zobrazí tlačítko pro správu, nebo přihlašování na zkoušky.
  */
 
-public class ControllerMenu extends Ovladac implements Initializable
+public class ControllerMenu extends Ovladac
 {
     @FXML
     Button tPrihlasovani,tSprava;
@@ -44,7 +44,7 @@ public class ControllerMenu extends Ovladac implements Initializable
 
     // Zobrazení správného tlačítka podle typu přihlášeného uživatele
     @Override
-    public void initialize(URL url, ResourceBundle rb)
+    public void nactiData()
     {
         if(getPrihlasenyUzivatel().isStudent())
         {

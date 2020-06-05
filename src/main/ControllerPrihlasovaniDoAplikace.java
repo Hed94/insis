@@ -24,7 +24,7 @@ public class ControllerPrihlasovaniDoAplikace extends Ovladac {
     @FXML
     public void prihlasSe() throws IOException {
         nastavUzivatele(databaze.prihlasUzivatele(uzivatelskeJmeno.getText(),heslo.getText()));
-        if(getPrihlasenyUzivatel() != null)
+        if(getPrihlasenyUzivatel().getID() != 0)
         {
             prejdiDoOkna("../zdroje/menu.fxml");
         }
