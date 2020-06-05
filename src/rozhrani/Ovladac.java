@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import logika.Uzivatel;
+import logika.Zkouska;
 
 import java.io.IOException;
 
@@ -23,6 +24,7 @@ import java.io.IOException;
 
 public class Ovladac {
     public Uzivatel prihlasenyUzivatel;
+    public Zkouska zvolenaZkouska;
 
     @FXML
     private Rectangle rectangle;

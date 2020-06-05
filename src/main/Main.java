@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../zdroje/prihlasovaciObrazovka.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Insis");
         primaryStage.setScene(new Scene(root, 541, 472));
         primaryStage.setResizable(false);
         primaryStage.sizeToScene();

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ControllerVsechZkousek">
    <children>
       <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" layoutX="1062.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
@@ -18,14 +18,14 @@
             <TableColumn fx:id="sPredmet" prefWidth="133.0" text="Předmět" />
             <TableColumn fx:id="sDatum" prefWidth="125.0" text="Datum" />
             <TableColumn fx:id="sSemestr" prefWidth="95.0" text="Semestr" />
-            <TableColumn fx:id="sSemestr" prefWidth="83.0" text="Kapacita" />
-            <TableColumn fx:id="sSemestr" prefWidth="82.0" text="Přihlášeno" />
+            <TableColumn fx:id="sKapacita" prefWidth="83.0" text="Kapacita" />
+            <TableColumn fx:id="sPrihlaseno" prefWidth="82.0" text="Přihlášeno" />
          </columns>
       </TableView>
       <Button layoutX="807.0" layoutY="165.0" mnemonicParsing="false" onAction="#editovat" prefHeight="36.0" prefWidth="175.0" text="Editovat" />
       <Button layoutX="806.0" layoutY="106.0" mnemonicParsing="false" onAction="#nova" prefHeight="36.0" prefWidth="175.0" text="Nová zkouška" />
       <Label layoutX="361.0" layoutY="36.0" text="Seznam zkoušek" />
       <Button layoutX="806.0" layoutY="222.0" mnemonicParsing="false" onAction="#smazat" prefHeight="36.0" prefWidth="175.0" text="Smazat zkoušku" />
-      <Button layoutX="807.0" layoutY="452.0" mnemonicParsing="false" onAction="#Zpet" prefHeight="36.0" prefWidth="175.0" text="Zpet" />
+      <Button layoutX="807.0" layoutY="452.0" mnemonicParsing="false" onAction="#zpet" prefHeight="36.0" prefWidth="175.0" text="Zpet" />
    </children>
 </AnchorPane>
