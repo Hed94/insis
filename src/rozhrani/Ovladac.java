@@ -22,7 +22,7 @@ import java.io.IOException;
 
 
 public class Ovladac {
-    private Uzivatel prihlasenyUzivatel;
+    public Uzivatel prihlasenyUzivatel;
 
     @FXML
     private Rectangle rectangle;
@@ -45,6 +45,7 @@ public class Ovladac {
         stage.setTitle("Insis");
         stage.setScene(new Scene(root));
         stage.setResizable(false);
+        stage.sizeToScene();
 
         Ovladac ovladac = loader.getController();
         ovladac.nastavUzivatele(prihlasenyUzivatel);
