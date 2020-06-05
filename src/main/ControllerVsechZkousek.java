@@ -97,6 +97,10 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
     public void aktualizujTabulku()
     {
         listZkousek = databaze.getVsechnyZkousky();
+        for(Zkouska zkouska:listZkousek)
+        {
+            zkouska.setObsazeno(databaze.spocitejUcast(zkouska));
+        }
         seznam.setItems(listZkousek);
     }
 

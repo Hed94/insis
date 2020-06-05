@@ -148,6 +148,28 @@ public class Databaze {
     }
 
     /**
+     * Metoda počítá účast na zkoušce.
+     */
+    public int spocitejUcast(Zkouska zkouska) {
+        try
+        {
+            String query = "SELECT Count(*) FROM `prihlaseneZkousky` WHERE `ID_zkousky` = \"" + zkouska.getID() + "\"";
+            rs = st.executeQuery(query);
+            int pocet = 0;
+            while(rs.next())
+            {
+                pocet = rs.getInt(1);
+            }
+            return pocet;
+        }
+        catch(Exception ex)
+        {
+            System.out.println("Chyba: " + ex);
+        }
+        return 0;
+    }
+
+    /**
      * Metoda maže zkoušku
      */
     public void smazZkousku(Zkouska kliknuta) {

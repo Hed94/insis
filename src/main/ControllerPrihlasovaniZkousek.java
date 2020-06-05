@@ -111,6 +111,10 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
     public void aktualizujTabulku()
     {
         listVsechZkousek = databaze.getVsechnyDostupneZkousky(getPrihlasenyUzivatel());
+        for(Zkouska zkouska:listVsechZkousek)
+        {
+            zkouska.setObsazeno(databaze.spocitejUcast(zkouska));
+        }
         seznam.setItems(listVsechZkousek);
 
         listPrihlasenychZkousek = databaze.getVsechnyPrihlaseneZkousky(getPrihlasenyUzivatel());
