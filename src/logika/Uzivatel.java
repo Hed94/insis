@@ -11,11 +11,11 @@ public class Uzivatel {
     private int ID;
     private String username;
     private String heslo;
-    private boolean student;
     private String jmeno;
     private String prijmeni;
     private String kontaktniEmail;
     private LocalDate datumNarozeni;
+    private boolean student;
 
     public Uzivatel(int ID,String username, String heslo, boolean student, String jmeno, String prijmeni, String kontaktniEmail, LocalDate datumNarozeni) {
         this.ID = ID;

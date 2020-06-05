@@ -27,6 +27,8 @@ public class ControllerUdajuUzivatele extends Ovladac implements Initializable
     @FXML
     private ImageView fotka;
 
+    private Databaze databaze = new Databaze();
+
     /**
      *  Metoda potvrzuje formulář a upravuje údaje a přechází do menu
      */
@@ -39,8 +41,8 @@ public class ControllerUdajuUzivatele extends Ovladac implements Initializable
             getPrihlasenyUzivatel().setJmeno(jmeno.getText());
             getPrihlasenyUzivatel().setPrijmeni(prijmeni.getText());
             getPrihlasenyUzivatel().setKontaktniEmail(email.getText());
-            Databaze.upravUzivatele(getPrihlasenyUzivatel());
-            prejdiDoOkna("menu");
+            databaze.upravUzivatele(getPrihlasenyUzivatel());
+            prejdiDoOkna("../zdroje/menu.fxml");
         }
     }
 
@@ -49,7 +51,7 @@ public class ControllerUdajuUzivatele extends Ovladac implements Initializable
      */
     @FXML
     public void zpet() throws IOException {
-        prejdiDoOkna("menu");
+        prejdiDoOkna("../zdroje/menu.fxml");
     }
 
     // Metoda nahrává po otevření okna do políček data a nastavuje obrázek https://randomuser.me/api/portraits/men/75.jpg

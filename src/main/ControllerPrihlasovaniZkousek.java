@@ -34,6 +34,8 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
     private ObservableList<Zkouska> listVsechZkousek = FXCollections.observableArrayList();
     private ObservableList<Zkouska> listPrihlasenychZkousek = FXCollections.observableArrayList();
 
+    private Databaze databaze = new Databaze();
+
     /**
      *  Metoda přihlašuje zkoušku
      *  Ale pouze v případě že je nějaká vybraná a že už na ní není uživatel přihlášen a je na ní kapacitně místo.
@@ -57,22 +59,22 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
             {
                 if(kliknuta.getKapacita()>kliknuta.getObsazeno())
                 {
-                    Databaze.PrihlasZkousku(kliknuta);
+                    databaze.prihlasZkousku(kliknuta,getPrihlasenyUzivatel());
                     aktualizujTabulku();
                 }
                 else
                 {
-                    Databaze.Chyba("Zkouška je už plně zaplněná");
+                    databaze.Chyba("Zkouška je už plně zaplněná");
                 }
             }
             else
             {
-                Databaze.Chyba("Tuto zkoušku už máte přihlášenou");
+                databaze.Chyba("Tuto zkoušku už máte přihlášenou");
             }
         }
         else
         {
-            Databaze.Chyba("Není vybrána žádna zkouška");
+            databaze.Chyba("Není vybrána žádna zkouška");
         }
     }
 
@@ -85,12 +87,12 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
         Zkouska kliknuta = prihlasene.getSelectionModel().getSelectedItem();
         if(kliknuta != null)
         {
-            Databaze.smazPrihlasenouZkousku(kliknuta,getPrihlasenyUzivatel());
+            databaze.smazPrihlasenouZkousku(kliknuta,getPrihlasenyUzivatel());
             aktualizujTabulku();
         }
         else
         {
-            Databaze.Chyba("Není vybrána žádna zkouška");
+            databaze.Chyba("Není vybrána žádna zkouška");
         }
     }
 
@@ -99,7 +101,7 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
      */
     @FXML
     public void zpet() throws IOException {
-        prejdiDoOkna("menu");
+        prejdiDoOkna("../zdroje/menu.fxml");
     }
 
     /**
@@ -107,10 +109,10 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
      */
     public void aktualizujTabulku()
     {
-        listVsechZkousek = Databaze.getVsechnyDostupneZkousky();
+        listVsechZkousek = databaze.getVsechnyDostupneZkousky();
         seznam.setItems(listVsechZkousek);
 
-        listPrihlasenychZkousek = Databaze.getVsechnyZkousky();
+        listPrihlasenychZkousek = databaze.getVsechnyZkousky();
         prihlasene.setItems(listPrihlasenychZkousek);
     }
 

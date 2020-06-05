@@ -19,16 +19,18 @@ public class ControllerPrihlasovaniDoAplikace extends Ovladac {
     @FXML
     PasswordField heslo;
 
+    private Databaze databaze = new Databaze();
+
     @FXML
     public void prihlasSe() throws IOException {
-        nastavUzivatele(Databaze.prihlasUzivatele(uzivatelskeJmeno.getText(),heslo.getText()));
+        nastavUzivatele(databaze.prihlasUzivatele(uzivatelskeJmeno.getText(),heslo.getText()));
         if(getPrihlasenyUzivatel() != null)
         {
-            prejdiDoOkna("menu");
+            prejdiDoOkna("../zdroje/menu.fxml");
         }
         else
         {
-            Databaze.Chyba("Špatná kombinace jména nebo hesla");
+            databaze.Chyba("Špatná kombinace jména nebo hesla");
         }
     }
 }

@@ -23,6 +23,8 @@ public class ControllerFormulareZkousek extends Ovladac implements Initializable
     @FXML
     private DatePicker datum;
 
+    private Databaze databaze = new Databaze();
+
     /**
      *  Metoda potvrzuje formulář a podle toho zda se sem uživatel dostal přes tlačítko nová / editace
      *  Se vybere adekvátní akce a poté se vrátí uživatel zpět do přehledu všech zkoušek
@@ -38,7 +40,7 @@ public class ControllerFormulareZkousek extends Ovladac implements Initializable
                 zvolenaZkouska.setKapacita(Integer.parseInt(kapacita.getText()));
                 zvolenaZkouska.setSemestr(semestr.getText());
                 zvolenaZkouska.setPredmet(predmet.getText());
-                Databaze.upravZkousku(zvolenaZkouska);
+                databaze.upravZkousku(zvolenaZkouska);
             }
             else
             {
@@ -47,9 +49,9 @@ public class ControllerFormulareZkousek extends Ovladac implements Initializable
                 nova.setKapacita(Integer.parseInt(kapacita.getText()));
                 nova.setSemestr(semestr.getText());
                 nova.setPredmet(predmet.getText());
-                Databaze.pridejZkousku(nova);
+                databaze.pridejZkousku(nova);
             }
-            prejdiDoOkna("vsechnyZkousky");
+            prejdiDoOkna("../zdroje/vsechnyZkousky.fxml");
         }
     }
 
@@ -58,7 +60,7 @@ public class ControllerFormulareZkousek extends Ovladac implements Initializable
      */
     @FXML
     public void zpet() throws IOException {
-        prejdiDoOkna("vsechnyZkousky");
+        prejdiDoOkna("../zdroje/vsechnyZkousky.fxml");
     }
 
     // Metoda nahrává po otevření okna do políček data, pokuď se jedná o editaci

@@ -35,6 +35,8 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
 
     private ObservableList<Zkouska> listZkousek = FXCollections.observableArrayList();
 
+    private Databaze databaze = new Databaze();
+
     /**
      *  Metoda přechází do formuláře zkoušek na vytvoření nové
      */
@@ -42,7 +44,7 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
     @FXML
     public void nova() throws IOException {
         zvolenaZkouska = null;
-        prejdiDoOkna("formularZkousek");
+        prejdiDoOkna("../zdroje/formularZkousek.fxml");
     }
 
     /**
@@ -56,11 +58,11 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
         if(kliknuta != null)
         {
             zvolenaZkouska = kliknuta;
-            prejdiDoOkna("formularZkousek");
+            prejdiDoOkna("../zdroje/formularZkousek.fxml");
         }
         else
         {
-           Databaze.Chyba("Není vybrána žádna zkouška");
+           databaze.Chyba("Není vybrána žádna zkouška");
         }
     }
 
@@ -73,11 +75,11 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
         Zkouska kliknuta = seznam.getSelectionModel().getSelectedItem();
         if(kliknuta != null)
         {
-            Databaze.smazZkousku(kliknuta);
+            databaze.smazZkousku(kliknuta);
         }
         else
         {
-            Databaze.Chyba("Není vybrána žádna zkouška");
+            databaze.Chyba("Není vybrána žádna zkouška");
         }
     }
 
@@ -86,7 +88,7 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
      */
     @FXML
     public void zpet() throws IOException {
-        prejdiDoOkna("menu");
+        prejdiDoOkna("../zdroje/menu.fxml");
     }
 
     /**
@@ -94,7 +96,7 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
      */
     public void aktualizujTabulku()
     {
-        listZkousek = Databaze.getVsechnyZkousky();
+        listZkousek = databaze.getVsechnyZkousky();
         seznam.setItems(listZkousek);
     }
 

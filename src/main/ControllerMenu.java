@@ -24,22 +24,22 @@ public class ControllerMenu extends Ovladac implements Initializable
 
     @FXML
     public void udaje() throws IOException {
-        prejdiDoOkna("udajeUzivatele");
+        prejdiDoOkna("../zdroje/udajeUzivatele.fxml");
     }
 
     @FXML
     public void zkousky() throws IOException {
-        prejdiDoOkna("prihlasovaniZkousky");
+        prejdiDoOkna("../zdroje/prihlasovaniZkousky.fxml");
     }
 
     @FXML
     public void sprava() throws IOException {
-        prejdiDoOkna("vsechnyZkousky");
+        prejdiDoOkna("../zdroje/vsechnyZkousky.fxml");
     }
 
     @FXML
     public void odhlasSe() throws IOException {
-        prejdiDoOkna("prihlasovaciObrazovka");
+        prejdiDoOkna("../zdroje/prihlasovaciObrazovka.fxml");
     }
 
     // Zobrazení správného tlačítka podle typu přihlášeného uživatele
