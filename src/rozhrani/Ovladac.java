@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import logika.Uzivatel;
@@ -50,6 +51,7 @@ public class Ovladac {
         Parent root = loader.load();
 
         stage.setTitle("Insis");
+        stage.getIcons().add(new Image("/zdroje/vseLogo.png"));
         stage.setScene(new Scene(root));
         stage.setResizable(false);
         stage.sizeToScene();
@@ -57,7 +59,7 @@ public class Ovladac {
         Ovladac ovladac = loader.getController();
         ovladac.nastavUzivatele(prihlasenyUzivatel);
         ovladac.nastavZvolenouZkousku(zvolenaZkouska);
-        nactiData();
+        ovladac.nactiData();
 
         stage.show();
         Stage soucasne = (Stage) rectangle.getScene().getWindow();

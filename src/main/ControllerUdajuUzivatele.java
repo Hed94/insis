@@ -68,7 +68,5 @@ public class ControllerUdajuUzivatele extends Ovladac
 
         Image image = new Image(path);
         fotka.setImage(image);
-        HostServices services = Main.getInstance().getHostServices();
-        services.showDocument(pathToOpen);
     }
 }
