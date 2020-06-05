@@ -8,6 +8,7 @@ import java.time.LocalDate;
  */
 
 public class Uzivatel {
+    private int ID;
     private String username;
     private String heslo;
     private boolean student;
@@ -16,7 +17,8 @@ public class Uzivatel {
     private String kontaktniEmail;
     private LocalDate datumNarozeni;
 
-    public Uzivatel(String username, String heslo, boolean student, String jmeno, String prijmeni, String kontaktniEmail, LocalDate datumNarozeni) {
+    public Uzivatel(int ID,String username, String heslo, boolean student, String jmeno, String prijmeni, String kontaktniEmail, LocalDate datumNarozeni) {
+        this.ID = ID;
         this.username = username;
         this.heslo = heslo;
         this.student = student;
@@ -27,6 +29,14 @@ public class Uzivatel {
     }
 
     public Uzivatel() {
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     public String getUsername() {

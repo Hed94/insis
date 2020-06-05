@@ -25,7 +25,6 @@
          </image>
       </ImageView>
       <Button layoutX="270.0" layoutY="468.0" mnemonicParsing="false" onAction="#potvrdit" prefHeight="50.0" prefWidth="224.0" text="Potvrdit" />
-      <Button layoutX="158.0" layoutY="313.0" mnemonicParsing="false" onAction="#sprava" prefHeight="50.0" prefWidth="224.0" text="Správa zkoušek" visible="false" />
       <Button layoutX="632.0" layoutY="468.0" mnemonicParsing="false" onAction="#zpet" prefHeight="50.0" prefWidth="224.0" text="Zpět" />
       <Label layoutX="352.0" layoutY="142.0" text="Jméno">
          <font>

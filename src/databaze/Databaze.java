@@ -35,4 +35,7 @@ public class Databaze {
 
     public static void smazPrihlasenouZkousku(Zkouska kliknuta, Uzivatel prihlasenyUzivatel) {
     }
+
+    public static void upravUzivatele(Uzivatel prihlasenyUzivatel) {
+    }
 }
