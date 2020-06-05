@@ -19,4 +19,10 @@ public class Databaze {
 
     public static void smazZkousku(Zkouska kliknuta) {
     }
+
+    public static void upravZkousku(Zkouska zvolenaZkouska) {
+    }
+
+    public static void pridejZkousku(Zkouska nova) {
+    }
 }

@@ -11,7 +11,6 @@
    <children>
       <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="553.0" layoutX="1062.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="46.0" />
-      <Button layoutX="158.0" layoutY="313.0" mnemonicParsing="false" onAction="#sprava" prefHeight="50.0" prefWidth="224.0" text="Správa zkoušek" visible="false" />
       <TableView fx:id="seznam" layoutX="115.0" layoutY="80.0" prefHeight="408.0" prefWidth="579.0">
          <columns>
             <TableColumn fx:id="sID" prefWidth="60.0" text="ID" />

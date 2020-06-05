@@ -19,9 +19,7 @@ import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 /**
- *  Kontroler slouží pro ovládání obrazovky menu.
- *  V podstatě se zde řeší pouze přecházení do jiných oken aplikace.
- *  A podle typu uživatele ( učitel / student ) se zobrazí tlačítko pro správu, nebo přihlašování na zkoušky.
+ *  Kontroler slouží pro ovládání obrazovky všech zkoušek.
  */
 
 public class ControllerVsechZkousek extends Ovladac implements Initializable
@@ -43,6 +41,7 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
 
     @FXML
     public void nova() throws IOException {
+        zvolenaZkouska = null;
         prejdiDoOkna("formularZkousek");
     }
 
@@ -51,7 +50,8 @@ public class ControllerVsechZkousek extends Ovladac implements Initializable
      *  Případně vyhodí chybu ve formě hlášky
      */
     @FXML
-    public void editovat() throws IOException {
+    public void editovat() throws IOException
+    {
         Zkouska kliknuta = seznam.getSelectionModel().getSelectedItem();
         if(kliknuta != null)
         {
