@@ -46,15 +46,15 @@ public class ControllerMenu extends Ovladac
     @Override
     public void nactiData()
     {
-        if(getPrihlasenyUzivatel().isStudent())
+        if(!getPrihlasenyUzivatel().isStudent())
         {
-            // Jsem student
+            // Nejsem student
             tPrihlasovani.setVisible(true);
             tSprava.setVisible(false);
         }
         else
         {
-            // Nejsem student
+            // Jsem student
             tPrihlasovani.setVisible(false);
             tSprava.setVisible(true);
         }

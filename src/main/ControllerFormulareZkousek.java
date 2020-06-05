@@ -9,14 +9,12 @@ import logika.Zkouska;
 import rozhrani.Ovladac;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 /**
  *  Kontroller slouží pro ovládání formuláře zkoušky
  */
 
-public class ControllerFormulareZkousek extends Ovladac implements Initializable
+public class ControllerFormulareZkousek extends Ovladac
 {
     @FXML
     private TextField predmet,semestr,kapacita;
@@ -63,16 +61,13 @@ public class ControllerFormulareZkousek extends Ovladac implements Initializable
         prejdiDoOkna("../zdroje/vsechnyZkousky.fxml");
     }
 
-    // Metoda nahrává po otevření okna do políček data, pokuď se jedná o editaci
+    // Metoda nahrává po otevření okna do políček data
     @Override
-    public void initialize(URL url, ResourceBundle rb)
+    public void nactiData()
     {
-        if(zvolenaZkouska!=null)
-        {
-            predmet.setText(zvolenaZkouska.getPredmet());
-            semestr.setText(zvolenaZkouska.getSemestr());
-            kapacita.setText(zvolenaZkouska.getKapacita()+"");
-            datum.setValue(zvolenaZkouska.getDatum());
-        }
+        predmet.setText(zvolenaZkouska.getPredmet());
+        semestr.setText(zvolenaZkouska.getSemestr());
+        kapacita.setText(zvolenaZkouska.getKapacita()+"");
+        datum.setValue(zvolenaZkouska.getDatum());
     }
 }

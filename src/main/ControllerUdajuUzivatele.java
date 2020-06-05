@@ -54,7 +54,7 @@ public class ControllerUdajuUzivatele extends Ovladac
         prejdiDoOkna("../zdroje/menu.fxml");
     }
 
-    // Metoda nahrává po otevření okna do políček data a nastavuje obrázek https://randomuser.me/api/portraits/men/75.jpg
+    // Metoda nahrává po otevření okna do políček data a nastavuje obrázek
     @Override
     public void nactiData()
     {
