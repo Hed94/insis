@@ -25,4 +25,14 @@ public class Databaze {
 
     public static void pridejZkousku(Zkouska nova) {
     }
+
+    public static ObservableList<Zkouska> getVsechnyDostupneZkousky() {
+        return null;
+    }
+
+    public static void PrihlasZkousku(Zkouska kliknuta) {
+    }
+
+    public static void smazPrihlasenouZkousku(Zkouska kliknuta, Uzivatel prihlasenyUzivatel) {
+    }
 }
