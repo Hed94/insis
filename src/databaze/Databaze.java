@@ -92,12 +92,40 @@ public class Databaze {
     }
 
     /**
-     * Metoda vrací seznam všech dostupných zkoušek které si lze přihlásit.
+     * Metoda vrací seznam všech zkoušek které jsou
      */
-    public ObservableList<Zkouska> getVsechnyDostupneZkousky() {
+    public ObservableList<Zkouska> getVsechnyPrihlaseneZkousky(Uzivatel prihlasenyUzivatel) {
         try
         {
-            String query = "SELECT * FROM `zkouska`";
+            String query = "SELECT * FROM `zkouska` WHERE `ID` IN ( Select `ID_zkousky` FROM `prihlaseneZkousky` WHERE `ID_uzivatele` = \"" + prihlasenyUzivatel.getID() + "\")";
+            rs = st.executeQuery(query);
+            ObservableList<Zkouska>list = FXCollections.observableArrayList();
+            while(rs.next())
+            {
+                Zkouska zkouska = new Zkouska();
+                zkouska.setID(rs.getInt(1));
+                zkouska.setPredmet(rs.getString(2));
+                zkouska.setDatum(rs.getDate(3).toLocalDate());
+                zkouska.setSemestr(rs.getString(4));
+                zkouska.setKapacita(rs.getInt(5));
+                list.add(zkouska);
+            }
+            return list;
+        }
+        catch(Exception ex)
+        {
+            System.out.println("Chyba: " + ex);
+        }
+        return null;
+    }
+
+    /**
+     * Metoda vrací seznam všech dostupných zkoušek které si lze přihlásit.
+     */
+    public ObservableList<Zkouska> getVsechnyDostupneZkousky(Uzivatel prihlasenyUzivatel) {
+        try
+        {
+            String query = "SELECT * FROM `zkouska` WHERE `ID` NOT IN ( Select `ID_zkousky` FROM `prihlaseneZkousky` WHERE `ID_uzivatele` = \"" + prihlasenyUzivatel.getID() + "\")";
             rs = st.executeQuery(query);
             ObservableList<Zkouska>list = FXCollections.observableArrayList();
             while(rs.next())

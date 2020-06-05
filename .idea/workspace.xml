@@ -61,54 +61,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zdroje/formularZkousek.fxml">
+        <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniZkousek.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="263" selection-start-line="10" selection-start-column="216" selection-end-line="10" selection-end-column="263" />
+            <state relative-caret-position="360">
+              <caret line="110" column="35" lean-forward="true" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+              <folding>
+                <element signature="e#4551#4552#0" expanded="true" />
+                <element signature="e#4586#4587#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/ControllerFormulareZkousek.java">
+        <entry file="file://$PROJECT_DIR$/src/databaze/Databaze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zdroje/menu.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="250" selection-start-line="8" selection-start-column="215" selection-end-line="8" selection-end-column="250" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ControllerMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+            <state relative-caret-position="414">
+              <caret line="99" column="134" lean-forward="true" selection-start-line="99" selection-start-column="134" selection-end-line="99" selection-end-column="134" />
             </state>
           </provider>
         </entry>
@@ -116,53 +85,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ControllerVsechZkousek.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniZkousek.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="899">
-              <caret line="103" column="41" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="41" />
+            <state relative-caret-position="603">
+              <caret line="115" column="25" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml">
-          <provider selected="true" editor-type-id="text-editor">
+          <provider editor-type-id="text-editor">
             <state relative-caret-position="81">
               <caret line="9" column="265" selection-start-line="9" selection-start-column="265" selection-end-line="9" selection-end-column="265" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rozhrani/Ovladac.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ControllerUdajuUzivatele.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -196,8 +132,6 @@
         <option value="$PROJECT_DIR$/src/zdroje/vsechnyZkousky.fxml" />
         <option value="$PROJECT_DIR$/src/zdroje/formularZkousek.fxml" />
         <option value="$PROJECT_DIR$/src/logika/Uzivatel.java" />
-        <option value="$PROJECT_DIR$/src/databaze/Databaze.java" />
-        <option value="$PROJECT_DIR$/src/main/ControllerPrihlasovaniZkousek.java" />
         <option value="$PROJECT_DIR$/src/main/ControllerVsechZkousek.java" />
         <option value="$PROJECT_DIR$/src/main/ControllerPrihlasovaniDoAplikace.java" />
         <option value="$PROJECT_DIR$/src/zdroje/udajeUzivatele.fxml" />
@@ -207,6 +141,8 @@
         <option value="$PROJECT_DIR$/src/main/ControllerMenu.java" />
         <option value="$PROJECT_DIR$/src/main/ControllerUdajuUzivatele.java" />
         <option value="$PROJECT_DIR$/src/main/ControllerFormulareZkousek.java" />
+        <option value="$PROJECT_DIR$/src/main/ControllerPrihlasovaniZkousek.java" />
+        <option value="$PROJECT_DIR$/src/databaze/Databaze.java" />
       </list>
     </option>
   </component>
@@ -413,7 +349,7 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.12480127" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.12480127" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -422,7 +358,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30397505" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30319563" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -481,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/databaze/Databaze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logika/Uzivatel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -497,16 +426,6 @@
             <element signature="e#898#899#0" expanded="true" />
             <element signature="e#931#932#0" expanded="true" />
             <element signature="e#959#960#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniDoAplikace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,32 +474,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniZkousek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="103" column="41" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="9" column="265" selection-start-line="9" selection-start-column="265" selection-end-line="9" selection-end-column="265" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ControllerMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ControllerVsechZkousek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -592,23 +489,73 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ControllerUdajuUzivatele.java">
+    <entry file="file://$PROJECT_DIR$/src/main/ControllerFormulareZkousek.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
+        <state relative-caret-position="629">
+          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ControllerFormulareZkousek.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+        <state relative-caret-position="289">
+          <caret line="1770" column="31" selection-start-line="1770" selection-start-column="31" selection-end-line="1770" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniDoAplikace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ControllerUdajuUzivatele.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zdroje/prihlasovaniZkousky.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="9" column="265" selection-start-line="9" selection-start-column="265" selection-end-line="9" selection-end-column="265" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ControllerVsechZkousek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="115" column="25" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ControllerPrihlasovaniZkousek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="110" column="35" lean-forward="true" selection-start-line="110" selection-start-column="35" selection-end-line="110" selection-end-column="35" />
+          <folding>
+            <element signature="e#4551#4552#0" expanded="true" />
+            <element signature="e#4586#4587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/databaze/Databaze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="99" column="134" lean-forward="true" selection-start-line="99" selection-start-column="134" selection-end-line="99" selection-end-column="134" />
         </state>
       </provider>
     </entry>

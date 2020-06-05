@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import logika.Zkouska;
 import rozhrani.Ovladac;
 
@@ -43,7 +44,7 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
 
     @FXML
     public void prihlasit() throws IOException {
-        Zkouska kliknuta = prihlasene.getSelectionModel().getSelectedItem();
+        Zkouska kliknuta = seznam.getSelectionModel().getSelectedItem();
         if(kliknuta != null)
         {
             boolean uzPrihlaseno = false;
@@ -109,10 +110,10 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
      */
     public void aktualizujTabulku()
     {
-        listVsechZkousek = databaze.getVsechnyDostupneZkousky();
+        listVsechZkousek = databaze.getVsechnyDostupneZkousky(getPrihlasenyUzivatel());
         seznam.setItems(listVsechZkousek);
 
-        listPrihlasenychZkousek = databaze.getVsechnyZkousky();
+        listPrihlasenychZkousek = databaze.getVsechnyPrihlaseneZkousky(getPrihlasenyUzivatel());
         prihlasene.setItems(listPrihlasenychZkousek);
     }
 
@@ -131,7 +132,12 @@ public class ControllerPrihlasovaniZkousek extends Ovladac implements Initializa
         pSemestr.setCellValueFactory(new PropertyValueFactory<>("semestr"));
         pID.setCellValueFactory(new PropertyValueFactory<>("ID"));
         pDatum.setCellValueFactory(new PropertyValueFactory<>("datum"));
+    }
 
+    // Metoda nahrává do tabulek data.
+    @Override
+    public void nactiData()
+    {
         aktualizujTabulku();
     }
 }
