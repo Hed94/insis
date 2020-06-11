@@ -65,9 +65,11 @@ public class ControllerFormulareZkousek extends Ovladac
     @Override
     public void nactiData()
     {
-        predmet.setText(zvolenaZkouska.getPredmet());
-        semestr.setText(zvolenaZkouska.getSemestr());
-        kapacita.setText(zvolenaZkouska.getKapacita()+"");
-        datum.setValue(zvolenaZkouska.getDatum());
+        if(zvolenaZkouska!=null) {
+            predmet.setText(zvolenaZkouska.getPredmet());
+            semestr.setText(zvolenaZkouska.getSemestr());
+            kapacita.setText(zvolenaZkouska.getKapacita() + "");
+            datum.setValue(zvolenaZkouska.getDatum());
+        }
     }
 }

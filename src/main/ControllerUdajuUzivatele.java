@@ -35,7 +35,7 @@ public class ControllerUdajuUzivatele extends Ovladac
     @FXML
     public void potvrdit() throws IOException {
 
-        if(jmeno.getText()!= null && prijmeni.getText() != null && email.getText() != null && narozeni.getValue() != null)
+        if(jmeno.getText().length() > 0 && prijmeni.getText().length() > 0 && email.getText().length() > 0 && narozeni.getValue() != null)
         {
             getPrihlasenyUzivatel().setDatumNarozeni(narozeni.getValue());
             getPrihlasenyUzivatel().setJmeno(jmeno.getText());
@@ -43,6 +43,10 @@ public class ControllerUdajuUzivatele extends Ovladac
             getPrihlasenyUzivatel().setKontaktniEmail(email.getText());
             databaze.upravUzivatele(getPrihlasenyUzivatel());
             prejdiDoOkna("../zdroje/menu.fxml");
+        }
+        else
+        {
+            databaze.Chyba("Všechna políčka musí být vyplněna.");
         }
     }
 
